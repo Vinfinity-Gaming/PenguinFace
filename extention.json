@@ -1,0 +1,16 @@
+{
+  "name": "PenguinGPT",
+  "blocks": [
+    {
+      "opcode": "generateResponse",
+      "blockType": "reporter",
+      "text": "Generate response for [INPUT]",
+      "arguments": {
+        "INPUT": {
+          "type": "string",
+          "defaultValue": "Tell me a joke"
+        }
+      }
+    }
+  ]
+}

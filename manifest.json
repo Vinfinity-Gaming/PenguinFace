@@ -1,0 +1,9 @@
+{
+  "name": "PenguinGPT",
+  "description": "An extension that integrates Hugging Face API with PenguinMod",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "main": "index.js",
+  "icon": "path/to/your/icon.png",
+  "target": "penguinmod"
+}
