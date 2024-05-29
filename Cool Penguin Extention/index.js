@@ -46,4 +46,25 @@ class PenguinGPT {
     }
 }
 
-module.exports = PenguinFace;
+(function(Scratch) {
+    'use strict';
+    const penguinGPT = new PenguinGPT();
+    Scratch.extensions.register({
+        name: 'PenguinGPT',
+        blocks: [
+            {
+                opcode: 'generateResponse',
+                blockType: Scratch.BlockType.REPORTER,
+                text: 'Generate response for [INPUT]',
+                arguments: {
+                    INPUT: {
+                        type: Scratch.ArgumentType.STRING,
+                        defaultValue: 'Tell me a joke'
+                    }
+                }
+            }
+        ],
+        menus: {},
+        generateResponse: (args) => penguinGPT.generateResponse(args)
+    });
+})(Scratch);
